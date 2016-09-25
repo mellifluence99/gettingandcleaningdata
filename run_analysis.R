@@ -73,13 +73,19 @@ mergedtraintable2 <- merge(mergedtraintable, activity_table, by.x="activityid", 
 finaltable <- rbind(mergedtesttable2, mergedtraintable2)
 
 ## Change the activity measurements to be numeric
-finaltable2 <- mutate(finaltable, value = type.convert(value))
+finaltable2 <- mutate(finaltable, meanvalue = as.numeric(value))
 
 ## Group the data by activity, feature and subject.
 grouping <- group_by(finaltable2, activityname, featurename, subjectid)
 
 ## Create a final dataset
 summarizing <- summarise(grouping, value = mean(value))
+
+## Arrange
+summarizing <- arrange(summarizing, subjectid, activityname, featurename)
+
+## Lastly write out the summarised dataset in csv format.
+write.csv(summarizing,file="./summarised.csv")
 
 
      
