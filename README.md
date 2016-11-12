@@ -1,9 +1,21 @@
 # README.md
 
+The repository at <https://github.com/mellifluence99/gettingandcleaningdata> is the final course submission for the Coursera Data Science Getting and Cleaning Data course.
+
 This repository contains the following files:
 
-1.  This README.md file.  This summarises the files contained in this repo.
-2.  run_analysis.R.  This script contains the R code to provide the required output for the gettingandcleaningdata Coursera course.
-3.  CodeBook.md file containing information on the variables, data, and transformations used to clean up the data.
-4.  tidydata.csv.  The tidied output from the data analysis carried out by run_analysis.R.
-5.  Another change.
+## README.md
+
+This summarises the files contained in this repo.
+
+##  run_analysis.R
+
+This R script contains the code required to provide the specified output for the gettingandcleaningdata Coursera course.
+
+## CodeBook.md 
+
+This contains information on the variables, data, and transformations used to clean up the data.
+
+## tidydata.csv
+
+The tidy output from the data analysis carried out by run_analysis.R.  This dataset is tidy according to Hadley Wickam's definition contained in the following paper: <chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/http://vita.had.co.nz/papers/tidy-data.pdf>
