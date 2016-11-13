@@ -64,10 +64,10 @@ traintable <- traintable %>%
 ## Concatenate the test and training data together.
 finaltable <- rbind(testtable, traintable)
 
-## Perform the following tidying on the concatanted data:
+## Perform the following tidying on the concatenated data:
 ## 1. Convert value to be numeric. 
 ## 2. Group the data by activity, feature and subject.  
-## 3. Summarise the data to get the mean values.
+## 3. Summarise the data to get the mean feature value for each distinct subject, activitity and feature.
 ## 4. Arrange the data by subject, activity and features
 tidytable <- mutate(finaltable, value = as.numeric(value)) %>%
     group_by(activityname, featurename, subjectid) %>%
