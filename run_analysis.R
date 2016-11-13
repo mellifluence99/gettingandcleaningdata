@@ -2,9 +2,6 @@
 library(dplyr)
 library(tidyr)
 
-## Set the working directory
-setwd("~/data/Getting and Cleaning Data/UCI HAR Dataset")
-
 ## Read in the y test and train datasets
 activitytest <- read.delim("./test/Y_test.txt", sep = "", header = FALSE, colClasses = "character")
 activitytrain <- read.delim("./train/Y_train.txt", sep = "", header = FALSE, colClasses = "character")
@@ -79,4 +76,4 @@ tidytable <- mutate(finaltable, value = as.numeric(value)) %>%
     select(subjectid, featurename, activityname, meanvalue)
 
 ## Lastly write out the summarised tidy dataset in txt format.
-write.table(tidytable, file="~/git/gettingandcleaningdata/tidyhardata.txt", row.names=FALSE)
+write.table(tidytable, file="~/tidyhardata.txt", row.names=FALSE)
