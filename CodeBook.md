@@ -37,4 +37,4 @@ The following steps are taken in the run_analysis.R script:
 6.  The test and training data are tidyed and merged with the features and and activity labels.
 7.  The test and training data are then merged.
 8.  This final table is grouped and summarised to find the mean for each distinct variable, activity and subject.
-9.  lastly this is written out to a csv file for further analysis.
+9.  lastly this is written out to a txt file for further analysis.

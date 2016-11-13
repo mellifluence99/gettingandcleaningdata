@@ -16,6 +16,6 @@ This R script contains the code required to provide the specified output for the
 
 This contains information on the variables, data, and transformations used to clean up the data.
 
-## tidyhardata.csv
+## tidyhardata.txt
 
 The tidy output from the data analysis carried out by run_analysis.R.  This dataset is tidy according to Hadley Wickam's definition contained in the following paper: <http://vita.had.co.nz/papers/tidy-data.pdf>

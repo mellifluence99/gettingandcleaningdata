@@ -78,5 +78,5 @@ tidytable <- mutate(finaltable, value = as.numeric(value)) %>%
     arrange(subjectid, activityname, featurename) %>%
     select(subjectid, featurename, activityname, meanvalue)
 
-## Lastly write out the summarised tidy dataset in csv format.
-write.csv(tidytable,file="~/git/gettingandcleaningdata/tidyhardata.csv", row.names=FALSE)
+## Lastly write out the summarised tidy dataset in txt format.
+write.table(tidytable, file="~/git/gettingandcleaningdata/tidyhardata.txt", row.names=FALSE)
